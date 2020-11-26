@@ -1,3 +1,4 @@
+import os
 import apido
 import apido.deeptrack as dt
 import numpy as np
@@ -35,28 +36,24 @@ class Parameters(dict):
         return result_dict
 
 
-def has_dataset_parameters(config, dataset_name):
-    return dataset_name in config
-
-
 def get_dataset_parameters(
     dataset_name,
     data_feature=None,
-    config_path="params.json",
     n_images=10,
     no_load=False,
 ):
+    config_path = os.path.join("datasets", dataset_name, "params.json")
     try:
         config = apido.load_config(config_path)
-    except:
-        config = {}
-    if no_load or not has_dataset_parameters(config, dataset_name):
-        config[dataset_name] = dict(
-            calculate_dataset_parameters(data_feature, n_images)
-        )
+    except Exception as e:
+        print(e)
+        config = False
+
+    if no_load or not config:
+        config = dict(calculate_dataset_parameters(data_feature, n_images))
         apido.save_config(config_path, config)
 
-    return Parameters(config[dataset_name])
+    return Parameters(config)
 
 
 def is_jsonable(x):

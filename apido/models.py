@@ -6,10 +6,27 @@ import numpy as np
 
 
 def generator(breadth, depth, config):
-    """"""
+    """Creates a u-net generator according to the specifications in the paper.
 
-    sub = np.array(config["input_sub"]).reshape((1, 1, 1, -1))
-    div = np.array(config["input_div"]).reshape((1, 1, 1, -1))
+    * Uses concatenation skip steps in the encoder
+    * Uses maxpooling for downsampling
+    * Uses resnet block for the base block
+    * Uses instance normalization and leaky relu.
+
+    Parameters
+    ----------
+    breadth : int
+        Number of features in the top level. Each sequential level of the u-net
+        increases the number of features by a factor of two.
+    depth : int
+        Number of levels to the u-net. If `n`, then there will be `n-1` pooling layers.
+    config : dict
+        Parameters for the normalization.
+
+    """
+
+    sub = np.array(config["input_subtract"]).reshape((1, 1, 1, -1))
+    div = np.array(config["input_divide"]).reshape((1, 1, 1, -1))
     normalization_layer = layers.Lambda(
         lambda x: K.tanh(3 * (x - sub) / (div - sub) - 1.5)
     )
@@ -68,13 +85,23 @@ def generator(breadth, depth, config):
 
 
 def discriminator(depth, config):
+    """Creates a patch discriminator according to the specifications in the paper.
 
-    sub = np.concat([config["target_sub"], config["input_sub"]], axis=-1).reshape(
-        (1, 1, 1, -1)
-    )
-    div = np.concat([config["target_div"], config["input_div"]], axis=-1).reshape(
-        (1, 1, 1, -1)
-    )
+    Parameters
+    ----------
+    depth : int
+        Number of levels to the model.
+    config : dict
+        Parameters for the normalization.
+
+    """
+
+    sub = np.concatenate(
+        [config["target_subtract"], config["input_subtract"]], axis=-1
+    ).reshape((1, 1, 1, -1))
+    div = np.concatenate(
+        [config["target_divide"], config["input_divide"]], axis=-1
+    ).reshape((1, 1, 1, -1))
 
     def disc_norm(x):
         return
@@ -106,13 +133,9 @@ def discriminator(depth, config):
             (None, None, 3),
             (None, None, 7),
         ],  # shape of the input
-        conv_layers_dimensions=(
-            16,
-            32,
-            64,
-            128,
-            256,
-        ),  # number of features in each convolutional layer
+        conv_layers_dimensions=[
+            16 * n ** 2 for n in range(depth)
+        ]
         dense_layers_dimensions=(),  # number of neurons in each dense layer
         number_of_outputs=1,  # number of neurons in the final dense step (numebr of output values)
         compile=False,
