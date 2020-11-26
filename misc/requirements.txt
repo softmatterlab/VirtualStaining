@@ -1,0 +1,10 @@
+opencv-python
+opencv-contrib-python
+numba
+setuptools==41.0.0
+numpy
+pandas
+scikit-learn
+scikit-image
+scipy==1.4.1
+pillow
