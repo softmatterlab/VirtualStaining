@@ -133,9 +133,7 @@ def discriminator(depth, config):
             (None, None, 3),
             (None, None, 7),
         ],  # shape of the input
-        conv_layers_dimensions=[
-            16 * n ** 2 for n in range(depth)
-        ]
+        conv_layers_dimensions=[16 * n ** 2 for n in range(depth)],
         dense_layers_dimensions=(),  # number of neurons in each dense layer
         number_of_outputs=1,  # number of neurons in the final dense step (numebr of output values)
         compile=False,
