@@ -33,7 +33,7 @@ def generator(breadth, depth, config):
 
     kernel_initializer = RandomNormal(mean=0.0, stddev=0.02)
 
-    activation = layers.LeakyReLU(0.2)
+    activation = layers.LeakyReLU(0.1)
 
     convolution_block = dt.layers.ConvolutionalBlock(
         activation=activation,
@@ -103,10 +103,7 @@ def discriminator(depth, config):
         [config["target_divide"], config["input_divide"]], axis=-1
     ).reshape((1, 1, 1, -1))
 
-    def disc_norm(x):
-        return
-
-    activation = layers.LeakyReLU(0.2)
+    activation = layers.LeakyReLU(0.1)
 
     normalization_layer = layers.Lambda(
         lambda x: K.tanh(3 * (x - sub) / (div - sub) - 1.5)
