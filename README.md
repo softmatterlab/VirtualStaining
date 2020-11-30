@@ -17,6 +17,8 @@ Requires python >= 3.6
 
 Open a terminal and run `pip install -r misc/requirements.txt`
 
+For use with a GPU, please refer to [tensorflow](https://www.tensorflow.org/install/gpu)
+
 ### Installing dependencies using Docker
 
 Requires Docker.
