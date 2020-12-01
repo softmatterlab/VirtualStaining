@@ -1,4 +1,4 @@
-# VirtualStaining using cGANs
+# VirtualStaining using cGAN
 <img src="assets/Fig 3-1.png"/>
 
 
