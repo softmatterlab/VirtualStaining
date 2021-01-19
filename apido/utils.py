@@ -256,50 +256,7 @@ def load_model(folder):
         folder
     )
 
-    stage_2_lipids_path = os.path.join(folder, _lipids_name, _model_name)
-    use_stage_2_lipids = os.path.exists(stage_2_lipids_path)
-
-    stage_2_cyto_path = os.path.join(folder, _cyto_name, _model_name)
-    use_stage_2_cyto = os.path.exists(stage_2_cyto_path)
-
-    stage_2_nuclei_path = os.path.join(folder, _nuclei_name, _model_name)
-    use_stage_2_nuclei = os.path.exists(stage_2_nuclei_path)
-
-    stage_1_model = keras.models.load_model(model_path, compile=False)
-
-    if use_stage_2_lipids:
-        lipids_model = keras.models.load_model(stage_2_lipids_path, compile=False)
-    if use_stage_2_cyto:
-        cyto_model = keras.models.load_model(stage_2_cyto_path, compile=False)
-    if use_stage_2_nuclei:
-        nuclei_model = keras.models.load_model(stage_2_nuclei_path, compile=False)
-
-    if not use_stage_2_lipids and not use_stage_2_cyto and not use_stage_2_nuclei:
-        return stage_1_model
-
-    model_input = layers.Input((None, None, 7))
-    stage_1_output = stage_1_model(model_input)
-
-    stage_2_input = layers.Concatenate(axis=-1)((model_input, stage_1_output))
-
-    if use_stage_2_nuclei:
-        nuclei = nuclei_model(stage_2_input)
-    else:
-        nuclei = layers.Lambda(lambda x: x[..., 0:1])(stage_1_output)
-
-    if use_stage_2_lipids:
-        lipids = lipids_model(stage_2_input)
-    else:
-        lipids = layers.Lambda(lambda x: x[..., 1:2])(stage_1_output)
-
-    if use_stage_2_cyto:
-        cyto = cyto_model(stage_2_input)
-    else:
-        cyto = layers.Lambda(lambda x: x[..., 2:3])(stage_1_output)
-
-    stage_2_output = layers.Concatenate(axis=-1)([nuclei, lipids, cyto])
-
-    model = keras.models.Model(model_input, stage_2_output)
+    model = keras.models.load_model(model_path, compile=False)
 
     warnings.filterwarnings("default")
     return model
