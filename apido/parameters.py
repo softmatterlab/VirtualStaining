@@ -37,12 +37,12 @@ class Parameters(dict):
 
 
 def get_dataset_parameters(
-    dataset_name,
+    dataset_path,
     data_feature=None,
     n_images=10,
     no_load=False,
 ):
-    config_path = os.path.join("datasets", dataset_name, "params.json")
+    config_path = os.path.join(dataset_path, "params.json")
     try:
         config = apido.load_config(config_path)
     except Exception as e:
@@ -100,7 +100,8 @@ def calculate_dataset_parameters(data_feature, n_images):
         print("Evaluating image {0}...".format(i), end="\r")
         data = data_feature.update().resolve()
 
-        reduced_properties = [reduce_property(prop) for prop in data[0].properties]
+        reduced_properties = [reduce_property(
+            prop) for prop in data[0].properties]
 
         parameters["props"].append(reduced_properties)
 
@@ -155,11 +156,13 @@ def get_per_image_correction(input, target):
     Ysmall = Y[take_center]
 
     results = []
-    corrected_input = dt.Affine(translate=(x_corr, y_corr)).resolve(np.array(input))
+    corrected_input = dt.Affine(translate=(
+        x_corr, y_corr)).resolve(np.array(input))
     for x in range(10, input.shape[0] - step - 20, step):
         for y in range(0, input.shape[1] - step, step):
-            I_1 = corrected_input[x : x + step, y : y + step, correlation_fields[0]]
-            I_2 = target[x : x + step, y : y + step, correlation_fields[1]]
+            I_1 = corrected_input[x: x + step,
+                                  y: y + step, correlation_fields[0]]
+            I_2 = target[x: x + step, y: y + step, correlation_fields[1]]
             I_1 = np.fft.fft2(I_1)
             I_2 = np.fft.fft2(I_2)
 
