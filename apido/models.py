@@ -62,7 +62,8 @@ def generator(breadth, depth, config):
 
     generator = dt.models.unet(
         input_shape=(None, None, 7),
-        conv_layers_dimensions=list(breadth * 2 ** n for n in range(depth - 1)),
+        conv_layers_dimensions=list(
+            breadth * 2 ** n for n in range(depth - 1)),
         base_conv_layers_dimensions=(breadth * 2 ** (depth - 1),),
         output_conv_layers_dimensions=(
             breadth,
@@ -114,7 +115,8 @@ def discriminator(depth, config):
         strides=1,
         activation=activation,
         instance_norm=lambda x: (
-            False if x == 16 else {"axis": -1, "center": False, "scale": False},
+            False if x == 16 else {"axis": -1,
+                                   "center": False, "scale": False},
         ),
     )
 
@@ -130,9 +132,10 @@ def discriminator(depth, config):
             (None, None, 3),
             (None, None, 7),
         ],  # shape of the input
-        conv_layers_dimensions=[16 * n ** 2 for n in range(depth)],
+        conv_layers_dimensions=[16 * 2 ** n for n in range(depth)],
         dense_layers_dimensions=(),  # number of neurons in each dense layer
-        number_of_outputs=1,  # number of neurons in the final dense step (numebr of output values)
+        # number of neurons in the final dense step (numebr of output values)
+        number_of_outputs=1,
         compile=False,
         input_layer=normalization_layer,
         output_kernel_size=4,
