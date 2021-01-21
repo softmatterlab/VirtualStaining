@@ -1,0 +1,3446 @@
+{
+  "props": [
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D04",
+          3
+        ],
+        "well": "D04",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C02",
+          4
+        ],
+        "well": "C02",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D04",
+          4
+        ],
+        "well": "D04",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B04",
+          4
+        ],
+        "well": "B04",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B03",
+          6
+        ],
+        "well": "B03",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D02",
+          6
+        ],
+        "well": "D02",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B03",
+          3
+        ],
+        "well": "B03",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C02",
+          3
+        ],
+        "well": "C02",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C03",
+          2
+        ],
+        "well": "C03",
+        "site": "002",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F002L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D02",
+          4
+        ],
+        "well": "D02",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D04",
+          5
+        ],
+        "well": "D04",
+        "site": "005",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F005L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B04",
+          6
+        ],
+        "well": "B04",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D03",
+          3
+        ],
+        "well": "D03",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D03",
+          2
+        ],
+        "well": "D03",
+        "site": "002",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F002L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C03",
+          4
+        ],
+        "well": "C03",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C02",
+          6
+        ],
+        "well": "C02",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C03",
+          3
+        ],
+        "well": "C03",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C04",
+          6
+        ],
+        "well": "C04",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D02",
+          3
+        ],
+        "well": "D02",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B04",
+          5
+        ],
+        "well": "B04",
+        "site": "005",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F005L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B03",
+          4
+        ],
+        "well": "B03",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C03",
+          1
+        ],
+        "well": "C03",
+        "site": "001",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F001L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D04",
+          2
+        ],
+        "well": "D04",
+        "site": "002",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F002L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C03",
+          6
+        ],
+        "well": "C03",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C03_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D04",
+          6
+        ],
+        "well": "D04",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D03",
+          6
+        ],
+        "well": "D03",
+        "site": "006",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F006L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B03",
+          1
+        ],
+        "well": "B03",
+        "site": "001",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F001L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C04",
+          4
+        ],
+        "well": "C04",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D03",
+          4
+        ],
+        "well": "D03",
+        "site": "004",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F004L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B03",
+          2
+        ],
+        "well": "B03",
+        "site": "002",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F002L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D04",
+          1
+        ],
+        "well": "D04",
+        "site": "001",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D04_T0001F001L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C02",
+          2
+        ],
+        "well": "C02",
+        "site": "002",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F002L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C04",
+          1
+        ],
+        "well": "C04",
+        "site": "001",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F001L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D02",
+          1
+        ],
+        "well": "D02",
+        "site": "001",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F001L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C04",
+          5
+        ],
+        "well": "C04",
+        "site": "005",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C04_T0001F005L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D02",
+          2
+        ],
+        "well": "D02",
+        "site": "002",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D02_T0001F002L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "C02",
+          5
+        ],
+        "well": "C02",
+        "site": "005",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_C02_T0001F005L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B03",
+          5
+        ],
+        "well": "B03",
+        "site": "005",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B03_T0001F005L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "D03",
+          1
+        ],
+        "well": "D03",
+        "site": "001",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_D03_T0001F001L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ],
+    [
+      {
+        "path": [
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z01C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z02C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z03C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z04C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z05C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z06C04.tif",
+          "./datasets/apidocytes_20x\\training_data\\AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z07C04.tif"
+        ],
+        "load_options": null,
+        "as_list": false,
+        "ndim": null,
+        "to_grayscale": false,
+        "get_one_random": false,
+        "well_site_tuple": [
+          "B04",
+          3
+        ],
+        "well": "B04",
+        "site": "003",
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "file_names": [
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z01C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z02C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z03C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z04C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z05C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z06C04.tif",
+          "AssayPlate_Greiner_#655090_B04_T0001F003L01A04Z07C04.tif"
+        ],
+        "name": "LoadImage"
+      },
+      {
+        "features": [
+          null,
+          null
+        ],
+        "hash_key": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "name": "Combine"
+      }
+    ]
+  ],
+  "__input_subtract": [
+    [
+      1199.0,
+      915.0,
+      704.0,
+      644.0,
+      693.0,
+      851.0,
+      1138.0
+    ],
+    [
+      1158.0,
+      903.0,
+      732.0,
+      676.0,
+      684.0,
+      756.0,
+      924.0
+    ],
+    [
+      1202.0,
+      914.0,
+      697.0,
+      608.0,
+      679.0,
+      880.0,
+      1147.0
+    ],
+    [
+      1045.0,
+      830.0,
+      738.0,
+      697.0,
+      690.0,
+      757.0,
+      925.0
+    ],
+    [
+      1279.0,
+      1008.0,
+      759.0,
+      637.0,
+      635.0,
+      725.0,
+      953.0
+    ],
+    [
+      818.0,
+      776.0,
+      769.0,
+      772.0,
+      775.0,
+      784.0,
+      831.0
+    ],
+    [
+      1269.0,
+      997.0,
+      753.0,
+      641.0,
+      680.0,
+      863.0,
+      1153.0
+    ],
+    [
+      1333.0,
+      1030.0,
+      791.0,
+      688.0,
+      720.0,
+      861.0,
+      1129.0
+    ],
+    [
+      1372.0,
+      1072.0,
+      802.0,
+      673.0,
+      714.0,
+      878.0,
+      1179.0
+    ],
+    [
+      854.0,
+      799.0,
+      808.0,
+      810.0,
+      795.0,
+      845.0,
+      1005.0
+    ],
+    [
+      1257.0,
+      1027.0,
+      767.0,
+      627.0,
+      640.0,
+      752.0,
+      974.0
+    ],
+    [
+      1101.0,
+      850.0,
+      702.0,
+      652.0,
+      687.0,
+      804.1500000000015,
+      1054.0
+    ],
+    [
+      1246.0,
+      940.0,
+      735.0,
+      666.0,
+      727.0,
+      854.0,
+      1083.0
+    ],
+    [
+      1209.0,
+      894.0,
+      699.0,
+      664.0,
+      754.0,
+      946.0,
+      1248.0
+    ],
+    [
+      1208.0,
+      938.0,
+      724.0,
+      615.0,
+      640.0,
+      792.0,
+      1044.0
+    ],
+    [
+      1178.0,
+      921.0,
+      765.0,
+      728.0,
+      725.0,
+      741.0,
+      841.0
+    ],
+    [
+      1352.0,
+      1082.0,
+      812.0,
+      671.0,
+      663.0,
+      769.0,
+      1037.0
+    ],
+    [
+      1199.0,
+      963.0,
+      727.0,
+      621.0,
+      660.0,
+      791.0,
+      1004.0
+    ],
+    [
+      1051.0,
+      945.0,
+      894.0,
+      883.0,
+      872.0,
+      840.0,
+      885.0
+    ],
+    [
+      1094.0,
+      899.0,
+      777.0,
+      692.0,
+      675.0,
+      723.0,
+      853.0
+    ],
+    [
+      1289.0,
+      1047.0,
+      793.0,
+      633.0,
+      620.0,
+      718.0,
+      961.0
+    ],
+    [
+      1275.0,
+      1001.0,
+      749.0,
+      637.0,
+      679.0,
+      810.0,
+      1049.0
+    ],
+    [
+      1339.0,
+      1034.0,
+      776.0,
+      689.0,
+      724.0,
+      884.0,
+      1163.0
+    ],
+    [
+      1305.0,
+      1070.0,
+      820.0,
+      676.0,
+      652.0,
+      704.0,
+      875.0
+    ],
+    [
+      1261.0,
+      962.0,
+      710.0,
+      622.0,
+      677.0,
+      822.0,
+      1096.0
+    ],
+    [
+      1180.0,
+      915.0,
+      728.0,
+      669.0,
+      669.0,
+      726.0,
+      881.0
+    ],
+    [
+      1304.0,
+      990.0,
+      755.0,
+      653.0,
+      675.0,
+      814.0,
+      1080.0
+    ],
+    [
+      1201.0,
+      953.0,
+      726.0,
+      619.0,
+      644.0,
+      793.0,
+      1071.0
+    ],
+    [
+      1176.0,
+      909.0,
+      720.0,
+      665.0,
+      670.0,
+      737.0,
+      907.0
+    ],
+    [
+      1461.0,
+      1157.0,
+      844.0,
+      695.0,
+      704.0,
+      823.0,
+      1117.0
+    ],
+    [
+      1211.0,
+      933.0,
+      704.0,
+      624.0,
+      679.0,
+      867.0,
+      1109.0
+    ],
+    [
+      1408.0,
+      1090.0,
+      828.0,
+      731.0,
+      748.0,
+      853.0,
+      1095.0
+    ],
+    [
+      1290.0,
+      1032.0,
+      774.0,
+      662.0,
+      687.0,
+      804.0,
+      1033.0
+    ],
+    [
+      899.0,
+      822.0,
+      878.0,
+      913.0,
+      902.0,
+      901.0,
+      1013.0
+    ],
+    [
+      1267.0,
+      1016.0,
+      763.0,
+      627.0,
+      628.0,
+      732.0,
+      987.0
+    ],
+    [
+      977.0,
+      919.0,
+      881.0,
+      858.0,
+      871.0,
+      903.0,
+      976.0
+    ],
+    [
+      1149.0,
+      916.0,
+      757.0,
+      693.0,
+      680.0,
+      713.0,
+      826.0
+    ],
+    [
+      1252.0,
+      1024.0,
+      796.0,
+      641.0,
+      615.0,
+      688.0,
+      860.0
+    ],
+    [
+      1247.0,
+      941.0,
+      719.0,
+      627.0,
+      659.0,
+      808.0,
+      1057.0
+    ],
+    [
+      1196.0,
+      988.0,
+      877.0,
+      810.0,
+      800.0,
+      868.0,
+      992.0
+    ]
+  ],
+  "input_subtract": [
+    1202.775,
+    960.55,
+    768.825,
+    685.225,
+    702.275,
+    804.5037500000001,
+    1013.875
+  ],
+  "__target_subtract": [
+    [
+      35.0,
+      6.0,
+      260.0
+    ],
+    [
+      38.0,
+      8.0,
+      248.0
+    ],
+    [
+      35.0,
+      6.0,
+      267.0
+    ],
+    [
+      39.0,
+      7.0,
+      264.0
+    ],
+    [
+      38.0,
+      7.0,
+      267.0
+    ],
+    [
+      37.0,
+      8.0,
+      217.0
+    ],
+    [
+      36.0,
+      7.0,
+      264.0
+    ],
+    [
+      37.0,
+      7.0,
+      242.0
+    ],
+    [
+      39.0,
+      7.0,
+      254.0
+    ],
+    [
+      35.0,
+      7.0,
+      246.0
+    ],
+    [
+      32.0,
+      6.0,
+      253.0
+    ],
+    [
+      37.0,
+      7.0,
+      263.0
+    ],
+    [
+      37.0,
+      6.0,
+      254.0
+    ],
+    [
+      38.0,
+      6.0,
+      250.0
+    ],
+    [
+      35.0,
+      6.0,
+      250.0
+    ],
+    [
+      33.0,
+      6.0,
+      231.0
+    ],
+    [
+      37.0,
+      7.0,
+      258.0
+    ],
+    [
+      40.0,
+      8.0,
+      275.0
+    ],
+    [
+      33.0,
+      6.0,
+      223.0
+    ],
+    [
+      37.0,
+      7.0,
+      255.0
+    ],
+    [
+      40.0,
+      9.0,
+      260.0
+    ],
+    [
+      41.0,
+      7.0,
+      265.0
+    ],
+    [
+      34.0,
+      6.0,
+      259.0
+    ],
+    [
+      40.0,
+      7.0,
+      260.0
+    ],
+    [
+      35.0,
+      6.0,
+      265.0
+    ],
+    [
+      40.0,
+      8.0,
+      263.0
+    ],
+    [
+      38.0,
+      8.0,
+      271.0
+    ],
+    [
+      36.0,
+      8.0,
+      262.0
+    ],
+    [
+      34.0,
+      7.0,
+      242.0
+    ],
+    [
+      33.0,
+      6.0,
+      254.0
+    ],
+    [
+      36.0,
+      6.0,
+      264.0
+    ],
+    [
+      38.0,
+      7.0,
+      246.0
+    ],
+    [
+      38.0,
+      7.0,
+      276.0
+    ],
+    [
+      37.0,
+      5.0,
+      235.0
+    ],
+    [
+      34.0,
+      7.0,
+      264.0
+    ],
+    [
+      30.0,
+      6.0,
+      216.0
+    ],
+    [
+      38.0,
+      8.0,
+      242.0
+    ],
+    [
+      43.0,
+      10.0,
+      272.0
+    ],
+    [
+      38.0,
+      8.0,
+      258.0
+    ],
+    [
+      33.0,
+      6.0,
+      248.0
+    ]
+  ],
+  "target_subtract": [
+    36.6,
+    6.925,
+    254.075
+  ],
+  "__input_divide": [
+    [
+      5708.0,
+      6581.0,
+      6962.0,
+      6756.0,
+      6222.0,
+      5318.0,
+      4650.0
+    ],
+    [
+      5285.0,
+      5959.0,
+      6320.0,
+      6417.0,
+      6134.0,
+      5514.0,
+      4758.0
+    ],
+    [
+      5433.0,
+      6287.0,
+      6751.0,
+      6509.0,
+      5894.0,
+      4878.0,
+      4351.0
+    ],
+    [
+      5632.0,
+      6098.0,
+      6331.0,
+      6314.0,
+      6041.0,
+      5502.0,
+      4795.0
+    ],
+    [
+      5163.0,
+      5982.0,
+      6633.0,
+      6662.0,
+      6286.0,
+      5536.0,
+      4625.0
+    ],
+    [
+      5630.0,
+      5953.0,
+      6088.0,
+      6065.0,
+      5915.0,
+      5657.0,
+      5299.0
+    ],
+    [
+      5577.0,
+      6418.0,
+      6990.0,
+      7009.0,
+      6627.0,
+      5563.0,
+      4749.0
+    ],
+    [
+      5313.0,
+      6177.0,
+      6818.0,
+      6899.0,
+      6462.0,
+      5618.0,
+      4816.0
+    ],
+    [
+      5393.0,
+      6232.0,
+      6851.0,
+      6849.0,
+      6561.0,
+      5673.0,
+      4827.0
+    ],
+    [
+      5975.0,
+      6117.0,
+      6002.0,
+      5845.0,
+      5709.0,
+      5304.0,
+      4678.0
+    ],
+    [
+      4780.8499999996275,
+      5580.0,
+      6408.0,
+      6499.0,
+      6003.0,
+      5155.0,
+      4396.0
+    ],
+    [
+      5279.8499999996275,
+      5998.0,
+      6455.0,
+      6538.0,
+      6143.0,
+      5354.0,
+      4549.0
+    ],
+    [
+      5663.0,
+      6467.0,
+      6871.0,
+      6731.0,
+      6224.0,
+      5499.0,
+      4779.0
+    ],
+    [
+      5845.0,
+      6678.0,
+      6917.8499999996275,
+      6666.0,
+      6145.0,
+      5284.0,
+      4696.0
+    ],
+    [
+      5306.0,
+      6094.0,
+      6631.0,
+      6597.0,
+      6179.0,
+      5257.0,
+      4530.0
+    ],
+    [
+      5150.0,
+      5829.0,
+      6147.0,
+      6043.0,
+      5813.0,
+      5412.0,
+      4834.0
+    ],
+    [
+      5219.0,
+      6009.8499999996275,
+      6723.0,
+      6880.0,
+      6659.0,
+      5911.0,
+      4886.0
+    ],
+    [
+      5003.0,
+      5756.0,
+      6292.0,
+      6323.0,
+      5933.0,
+      5135.0,
+      4463.0
+    ],
+    [
+      5716.0,
+      6037.0,
+      6178.0,
+      6128.0,
+      5968.0,
+      5806.0,
+      5356.0
+    ],
+    [
+      5259.0,
+      5752.0,
+      6119.0,
+      6263.0,
+      6098.0,
+      5622.0,
+      4874.0
+    ],
+    [
+      4980.0,
+      5759.0,
+      6506.0,
+      6733.0,
+      6532.0,
+      5764.0,
+      4706.0
+    ],
+    [
+      5289.0,
+      6108.0,
+      6711.0,
+      6703.0,
+      6202.0,
+      5378.0,
+      4658.0
+    ],
+    [
+      5337.0,
+      6217.0,
+      6807.0,
+      6662.0,
+      6286.0,
+      5463.0,
+      4763.0
+    ],
+    [
+      4806.0,
+      5526.0,
+      6173.0,
+      6332.0,
+      6116.0,
+      5647.0,
+      4834.0
+    ],
+    [
+      5139.0,
+      6072.0,
+      6700.0,
+      6401.0,
+      5727.0,
+      4917.0,
+      4350.0
+    ],
+    [
+      5219.0,
+      5952.0,
+      6340.0,
+      6277.0,
+      5900.0,
+      5334.0,
+      4648.0
+    ],
+    [
+      5381.0,
+      6283.0,
+      6866.0,
+      6807.0,
+      6385.0,
+      5466.0,
+      4731.0
+    ],
+    [
+      5345.0,
+      6086.0,
+      6553.0,
+      6540.0,
+      6249.0,
+      5335.0,
+      4523.0
+    ],
+    [
+      5239.0,
+      5953.0,
+      6344.0,
+      6344.0,
+      6085.0,
+      5571.0,
+      4813.0
+    ],
+    [
+      5307.0,
+      6211.0,
+      7018.0,
+      7096.0,
+      6779.0,
+      5954.0,
+      4985.0
+    ],
+    [
+      5287.0,
+      6135.0,
+      6662.0,
+      6496.0,
+      6078.0,
+      5084.0,
+      4513.0
+    ],
+    [
+      5406.0,
+      6207.8499999996275,
+      6796.0,
+      6893.0,
+      6603.0,
+      5927.0,
+      5070.0
+    ],
+    [
+      5165.0,
+      5963.0,
+      6609.0,
+      6557.0,
+      6222.0,
+      5417.0,
+      4650.0
+    ],
+    [
+      5880.0,
+      5981.0,
+      5893.0,
+      5881.0,
+      5871.0,
+      5656.0,
+      5094.0
+    ],
+    [
+      5029.0,
+      5791.0,
+      6470.0,
+      6461.0,
+      6177.0,
+      5449.0,
+      4504.0
+    ],
+    [
+      6128.0,
+      6486.0,
+      6635.0,
+      6562.0,
+      6331.0,
+      5961.0,
+      5485.0
+    ],
+    [
+      5042.0,
+      5694.0,
+      6187.0,
+      6329.0,
+      6045.0,
+      5554.0,
+      4905.0
+    ],
+    [
+      4759.0,
+      5479.0,
+      6157.0,
+      6447.0,
+      6279.0,
+      5667.0,
+      4788.0
+    ],
+    [
+      5439.0,
+      6315.0,
+      6721.0,
+      6617.0,
+      6203.0,
+      5293.0,
+      4631.0
+    ],
+    [
+      5895.0,
+      6327.0,
+      6465.0,
+      6416.0,
+      6158.0,
+      5638.0,
+      5025.0
+    ]
+  ],
+  "input_divide": [
+    5360.067499999981,
+    6063.767499999982,
+    6527.521249999991,
+    6513.675,
+    6181.1,
+    5486.825,
+    4764.675
+  ],
+  "__target_divide": [
+    [
+      2565.0,
+      2022.0,
+      1338.0
+    ],
+    [
+      2681.0,
+      2139.0,
+      1307.0
+    ],
+    [
+      2668.0,
+      2136.0,
+      1388.0
+    ],
+    [
+      2677.0,
+      2194.0,
+      1315.0
+    ],
+    [
+      2700.0,
+      2129.0,
+      1337.0
+    ],
+    [
+      2692.0,
+      2294.0,
+      1368.0
+    ],
+    [
+      2637.0,
+      1982.0,
+      1303.0
+    ],
+    [
+      2651.8499999996275,
+      1933.0,
+      1324.0
+    ],
+    [
+      2655.0,
+      2082.0,
+      1334.0
+    ],
+    [
+      2626.0,
+      2107.0,
+      1266.0
+    ],
+    [
+      2560.0,
+      2311.0,
+      1385.0
+    ],
+    [
+      2766.0,
+      2118.0,
+      1385.0
+    ],
+    [
+      2658.0,
+      2020.0,
+      1392.0
+    ],
+    [
+      2646.0,
+      2064.0,
+      1345.0
+    ],
+    [
+      2635.0,
+      1974.0,
+      1334.0
+    ],
+    [
+      2644.0,
+      2258.0,
+      1249.0
+    ],
+    [
+      2641.0,
+      2020.0,
+      1316.0
+    ],
+    [
+      2818.0,
+      2228.0,
+      1380.0
+    ],
+    [
+      2463.0,
+      1915.0,
+      1176.0
+    ],
+    [
+      2758.0,
+      2294.0,
+      1334.0
+    ],
+    [
+      2648.0,
+      2069.0,
+      1291.0
+    ],
+    [
+      2659.0,
+      2096.0,
+      1356.0
+    ],
+    [
+      2677.0,
+      2060.0,
+      1349.0
+    ],
+    [
+      2749.0,
+      2107.0,
+      1383.0
+    ],
+    [
+      2663.0,
+      2340.0,
+      1512.0
+    ],
+    [
+      2708.0,
+      2161.0,
+      1400.0
+    ],
+    [
+      2697.0,
+      2022.0,
+      1403.0
+    ],
+    [
+      2611.0,
+      2135.0,
+      1431.0
+    ],
+    [
+      2684.0,
+      2031.0,
+      1314.0
+    ],
+    [
+      2630.8499999996275,
+      2005.0,
+      1335.0
+    ],
+    [
+      2644.0,
+      2216.0,
+      1353.0
+    ],
+    [
+      2720.0,
+      1961.0,
+      1347.0
+    ],
+    [
+      2688.0,
+      1999.0,
+      1389.0
+    ],
+    [
+      2494.0,
+      1985.0,
+      1410.0
+    ],
+    [
+      2652.0,
+      2292.0,
+      1443.0
+    ],
+    [
+      2421.0,
+      1956.0,
+      1275.0
+    ],
+    [
+      2647.0,
+      2184.0,
+      1293.0
+    ],
+    [
+      2729.0,
+      2225.0,
+      1326.0
+    ],
+    [
+      2725.0,
+      2154.0,
+      1330.0
+    ],
+    [
+      2608.0,
+      1954.0,
+      1429.8499999996275
+    ]
+  ],
+  "target_divide": [
+    2654.9174999999814,
+    2104.3,
+    1348.6462499999907
+  ],
+  "__offset": [
+    [
+      -1.7164274594536129,
+      -2.501292937359633
+    ],
+    [
+      0.9975175193089973,
+      -3.5959153079312913
+    ],
+    [
+      1.4508201758762485,
+      -3.8779827616511175
+    ],
+    [
+      1.3745778470783574,
+      -4.2057776651342085
+    ],
+    [
+      5.433683695621167,
+      0.9725068171818652
+    ],
+    [
+      3.76766037976257,
+      0.6133214064900103
+    ],
+    [
+      -1.8860013683732242,
+      -2.3204367663089385
+    ],
+    [
+      -1.4972448688020281,
+      -2.17868766272388
+    ],
+    [
+      -2.2168904432944796,
+      1.2506713947588322
+    ],
+    [
+      1.235902396883402,
+      -3.9999344258865643
+    ],
+    [
+      4.217253710193013,
+      -2.747691315914052
+    ],
+    [
+      4.124829284376592,
+      1.2133860622897958
+    ],
+    [
+      -1.5423380801320523,
+      -2.3583305071572562
+    ],
+    [
+      -1.5360190584307851,
+      1.0055447854260984
+    ],
+    [
+      1.3513096528806994,
+      -4.000574570072384
+    ],
+    [
+      4.039349026916566,
+      0.8552121688408116
+    ],
+    [
+      -1.7869839286283495,
+      -2.5154838971209297
+    ],
+    [
+      4.111507299872258,
+      1.1071524971375926
+    ],
+    [
+      -2.0305680396031796,
+      -3.0043161730661634
+    ],
+    [
+      4.135897164684173,
+      -2.6906336482488302
+    ],
+    [
+      1.274824323422864,
+      -4.008719024724858
+    ],
+    [
+      1.1076075583318872,
+      2.6537195040739503
+    ],
+    [
+      -1.9745902886147237,
+      1.354323833380188
+    ],
+    [
+      5.4190229187380385,
+      1.0591315046362375
+    ],
+    [
+      4.105697096834133,
+      1.036825962359645
+    ],
+    [
+      4.184060770040629,
+      0.9132860766756923
+    ],
+    [
+      1.3535693702370701,
+      2.851695118641928
+    ],
+    [
+      1.2876128296328706,
+      -3.9297626263052816
+    ],
+    [
+      1.213446707965593,
+      -3.594387791118936
+    ],
+    [
+      -1.8322682140719688,
+      1.2007962934312866
+    ],
+    [
+      1.1636689211207722,
+      2.7367197063694197
+    ],
+    [
+      -1.7430983779141238,
+      0.9621614037558683
+    ],
+    [
+      1.1240875724447732,
+      3.071494528288894
+    ],
+    [
+      1.1481133962490393,
+      2.8955386958687104
+    ],
+    [
+      4.413928030291587,
+      -2.955563900829823
+    ],
+    [
+      -2.317713906992316,
+      1.1604789309601826
+    ],
+    [
+      4.18883225141602,
+      -2.8102125717598314
+    ],
+    [
+      4.449889892686016,
+      -3.0012760301150827
+    ],
+    [
+      1.1611642306831866,
+      2.768387335927091
+    ],
+    [
+      -1.9180057709636003,
+      -2.66820011112606
+    ]
+  ],
+  "offset": [
+    1.245942105456852,
+    -0.7820706417015252
+  ]
+}

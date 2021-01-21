@@ -281,6 +281,7 @@ def ResidualBlock(
     activation="relu",
     strides=1,
     instance_norm=True,
+    concatenation=False,
     **kwargs
 ):
     """A 2d residual layer with two convolutional steps.
@@ -313,7 +314,10 @@ def ResidualBlock(
         )
 
         conv2 = layers.Conv2D(
-            filters, kernel_size=kernel_size, strides=strides, padding="same"
+            filters,
+            kernel_size=kernel_size,
+            strides=strides,
+            padding="same"
         )
 
         def call(x):
@@ -323,7 +327,12 @@ def ResidualBlock(
             y = _single_layer_call(
                 y, conv2, _instance_norm(instance_norm, filters), None
             )
-            y = layers.Add()([identity(x), y])
+
+            if concatenation:
+                y = layers.Concatenate(axis=-1)([identity(x), y])
+            else:
+                y = layers.Add()([identity(x), y])
+
             if activation:
                 y = _as_activation(activation)(y)
             return y

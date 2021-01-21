@@ -35,6 +35,13 @@ def generator(breadth, depth, config):
 
     activation = layers.LeakyReLU(0.1)
 
+    encoder_convolution_block = dt.layers.ResidualBlock(
+        activation=activation,
+        instance_norm=True,
+        concatenation=True,
+        kernel_initializer=kernel_initializer
+    )
+
     convolution_block = dt.layers.ConvolutionalBlock(
         activation=activation,
         instance_norm=True,
@@ -74,7 +81,7 @@ def generator(breadth, depth, config):
         output_kernel_size=1,
         scale_output=True,
         input_layer=normalization_layer,
-        encoder_convolution_block=convolution_block,
+        encoder_convolution_block=encoder_convolution_block,
         decoder_convolution_block=convolution_block,
         base_convolution_block=base_block,
         pooling_block=pooling_block,

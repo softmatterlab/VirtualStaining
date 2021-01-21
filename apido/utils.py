@@ -11,6 +11,7 @@ from tensorflow import keras
 import tensorflow
 from tensorflow.keras import layers
 
+import matplotlib.pyplot as plt
 
 import apido
 
@@ -100,9 +101,6 @@ def read_csv(path, delimiter="\t"):
 
 _folder_struct = "loss={0}_{1}_model_{2}"
 _model_name = "generator_checkpoint"
-_lipids_name = "lipids"
-_cyto_name = "cytoplasm"
-_nuclei_name = "nuclei"
 _csv_name = "training_history.csv"
 _config_name = "config.json"
 _image_name = "comparison.png"
@@ -259,4 +257,88 @@ def load_model(folder):
     model = keras.models.load_model(model_path, compile=False)
 
     warnings.filterwarnings("default")
+
     return model
+
+
+def save_training_results(
+    index, name, history, model, headers, inputs, predictions, targets
+):
+    loss = np.min(history["val_loss"])
+
+    datestr = get_datestring()
+
+    result_path = _folder_struct.format(loss, datestr, index)
+
+    # root_path = os.path.abspath(
+    #     os.path.join("C:", "results", name, result_path)
+    # )
+
+    # root_path = (
+    #     r"C:/GU/Dead Live Cell Imaging/logs/" + name + "/" + result_path
+    # )
+
+    DATASET_PATH = os.path.join(
+        headers["path"],
+        "apidocytes_" + headers["magnification"]
+    )
+    root_path = os.path.join(
+        DATASET_PATH, "model", name, result_path
+    )
+
+    print("Saving to", root_path)
+    os.makedirs(root_path, exist_ok=True)
+
+    print("Saving model...", end="")
+    model.save(os.path.join(root_path, _model_name))
+    print(" OK!")
+
+    print("Saving csv...", end="")
+    save_history_as_csv(os.path.join(root_path, _csv_name), history=history)
+    print(" OK!")
+
+    print("Saving config...", end="")
+    save_config(os.path.join(root_path, _config_name), headers)
+    print(" OK!")
+
+    print("Saving image...", end="")
+
+    try:
+        plot = plot_evaluation(inputs, targets, predictions, ncols=2)
+        plot.savefig(os.path.join(root_path, _image_name), dpi=600)
+    except Exception as e:
+        print("FAIL!")
+        print(e)
+        return
+    print("Saving predictions...", end="")
+
+    print(" OK!")
+
+
+def plot_evaluation(pc, target, prediction, ncols=5):
+    plt.figure(
+        figsize=(2 * target.shape[-1] * ncols, 2.5 * (target.shape[-1] + 1))
+    )
+    for col in range(ncols):
+        plt.subplot(1 + target.shape[-1], ncols, col + 1)
+        plt.imshow(pc[col, :, :, 0], vmin=0, vmax=4000)
+        plt.axis("off")
+
+        for row in range(target.shape[-1]):
+            plt.subplot(
+                1 + target.shape[-1],
+                ncols * 2,
+                ncols * (row + 1) * 2 + 1 + col * 2,
+            )
+            plt.imshow(prediction[col, :, :, row], vmin=0, vmax=4000)
+            plt.axis("off")
+            plt.subplot(
+                1 + target.shape[-1],
+                ncols * 2,
+                ncols * (row + 1) * 2 + 2 + col * 2,
+            )
+            plt.imshow(target[col, :, :, row], vmin=0, vmax=4000)
+            plt.axis("off")
+
+        plt.subplots_adjust(hspace=0.02, wspace=0.02)
+    return plt
