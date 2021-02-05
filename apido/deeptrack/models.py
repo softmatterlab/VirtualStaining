@@ -157,7 +157,9 @@ def FullyConnected(
     ):
 
         if dense_layer_number == 0 and not flatten_input:
-            layer = dense_block(dense_layer_dimension, input_shape=input_shape)(layer)
+            layer = dense_block(
+                dense_layer_dimension, input_shape=input_shape
+            )(layer)
         else:
             layer = dense_block(dense_layer_dimension)(layer)
 
@@ -167,7 +169,9 @@ def FullyConnected(
 
     # OUTPUT LAYER
 
-    output_layer = layers.Dense(number_of_outputs, activation=output_activation)(layer)
+    output_layer = layers.Dense(
+        number_of_outputs, activation=output_activation
+    )(layer)
 
     model = models.Model(input_layer, output_layer)
 
@@ -223,7 +227,7 @@ def Convolutional(
     convolution_block = as_block(convolution_block)
     pooling_block = as_block(pooling_block)
 
-    ### INITIALIZE DEEP LEARNING NETWORK
+    # INITIALIZE DEEP LEARNING NETWORK
 
     if isinstance(input_shape, list):
         network_input = [layers.Input(shape) for shape in input_shape]
@@ -237,7 +241,7 @@ def Convolutional(
     if input_layer:
         layer = input_layer(layer)
 
-    ### CONVOLUTIONAL BASIS
+    # CONVOLUTIONAL BASIS
     for conv_layer_dimension in conv_layers_dimensions:
 
         for _ in range(steps_per_pooling):
@@ -256,9 +260,9 @@ def Convolutional(
         layer = layers.Flatten()(layer)
         for dense_layer_dimension in dense_layers_dimensions:
             layer = dense_block(dense_layer_dimension)(layer)
-        output_layer = layers.Dense(number_of_outputs, activation=output_activation)(
-            layer
-        )
+        output_layer = layers.Dense(
+            number_of_outputs, activation=output_activation
+        )(layer)
     else:
 
         output_layer = layers.Conv2D(
@@ -287,7 +291,6 @@ def UNet(
     steps_per_pooling=1,
     number_of_outputs=1,
     output_kernel_size=3,
-    extra_upsample_amount=(),
     output_activation=None,
     loss=nd_mean_absolute_error,
     input_layer=None,
@@ -300,7 +303,6 @@ def UNet(
     scale_output=False,
     **kwargs
 ):
-
     """Creates and compiles a U-Net.
     Parameters
     ----------
@@ -379,28 +381,15 @@ def UNet(
             layer = decoder_convolution_block(conv_layer_dimension)(layer)
 
     # Output step
-
-    inter_outputs = [layer] * number_of_outputs
     for conv_layer_dimension in output_conv_layers_dimensions:
-        inter_outputs = [
-            output_convolution_block(conv_layer_dimension)(layer)
-            for layer in inter_outputs
-        ]
+        layer = output_convolution_block(conv_layer_dimension)(layer)
 
-    # for conv_layer_dimension in extra_upsample_amount:
-    #     layer = upsampling_block(conv_layer_dimension)(layer)
-
-    inter_outputs = [
-        layers.Conv2D(
-            1,
-            kernel_size=output_kernel_size,
-            activation=output_activation,
-            padding="same",
-        )(layer)
-        for layer in inter_outputs
-    ]
-
-    output_layer = layers.Concatenate()(inter_outputs)
+    output_layer = layers.Conv2D(
+        number_of_outputs,
+        kernel_size=output_kernel_size,
+        activation=output_activation,
+        padding="same",
+    )(layer)
 
     if scale_output:
         output_layer = ScaleLayer(number_of_outputs)(output_layer)
@@ -477,7 +466,9 @@ def RNN(
                 name=conv_layer_name,
             )
         if conv_layer_number == 0:
-            network.add(layers.TimeDistributed(conv_layer, input_shape=input_shape))
+            network.add(
+                layers.TimeDistributed(conv_layer, input_shape=input_shape)
+            )
         else:
             network.add(layers.TimeDistributed(conv_layer))
 
@@ -598,7 +589,9 @@ class cgan(tf.keras.Model):
 
         # The assembled model (stacked generator and discriminator)
         # Trains the generator to fool the discriminator
-        self.assemble = tf.keras.models.Model(self.model_input, [validity, img])
+        self.assemble = tf.keras.models.Model(
+            self.model_input, [validity, img]
+        )
 
         self.num_losses = len(assemble_loss)
 
@@ -639,7 +632,9 @@ class cgan(tf.keras.Model):
         with tf.GradientTape() as tape:
             assemble_output = self.assemble(batch_x)
 
-            generated_image_copies = [assemble_output[1]] * (self.num_losses - 1)
+            generated_image_copies = [assemble_output[1]] * (
+                self.num_losses - 1
+            )
 
             batch_y_copies = [batch_y] * (self.num_losses - 1)
 
