@@ -79,6 +79,7 @@ def generator(breadth, depth, config):
         steps_per_pooling=2,
         number_of_outputs=3,
         output_kernel_size=1,
+        output_activation="tanh",
         scale_output=True,
         input_layer=normalization_layer,
         encoder_convolution_block=encoder_convolution_block,
