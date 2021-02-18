@@ -280,7 +280,7 @@ def save_training_results(
 
     DATASET_PATH = os.path.join(
         headers["path"],
-        "apidocytes_" + headers["magnification"]
+        headers["dataset"]
     )
     root_path = os.path.join(
         DATASET_PATH, "model", name, result_path
@@ -315,13 +315,13 @@ def save_training_results(
     print(" OK!")
 
 
-def plot_evaluation(pc, target, prediction, ncols=5):
+def plot_evaluation(inputs, target, prediction, ncols=5):
     plt.figure(
         figsize=(2 * target.shape[-1] * ncols, 2.5 * (target.shape[-1] + 1))
     )
     for col in range(ncols):
         plt.subplot(1 + target.shape[-1], ncols, col + 1)
-        plt.imshow(pc[col, :, :, 0], vmin=0, vmax=4000)
+        plt.imshow(inputs[col, :, :, 0], cmap="gray")
         plt.axis("off")
 
         for row in range(target.shape[-1]):
@@ -330,14 +330,14 @@ def plot_evaluation(pc, target, prediction, ncols=5):
                 ncols * 2,
                 ncols * (row + 1) * 2 + 1 + col * 2,
             )
-            plt.imshow(prediction[col, :, :, row], vmin=0, vmax=4000)
+            plt.imshow(prediction[col, :, :, row])
             plt.axis("off")
             plt.subplot(
                 1 + target.shape[-1],
                 ncols * 2,
                 ncols * (row + 1) * 2 + 2 + col * 2,
             )
-            plt.imshow(target[col, :, :, row], vmin=0, vmax=4000)
+            plt.imshow(target[col, :, :, row])
             plt.axis("off")
 
         plt.subplots_adjust(hspace=0.02, wspace=0.02)
