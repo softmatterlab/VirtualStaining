@@ -58,9 +58,7 @@ for index in indices:
 
     model.compile(
         loss="mae",
-        metrics=apido.metrics(
-            m_header_dict["magnification"]
-        )
+        metrics=apido.metrics()
     )
 
     print("")
