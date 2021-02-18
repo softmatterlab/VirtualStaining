@@ -1,11 +1,13 @@
 from . import deeptrack as dt
+import tensorflow as tf
+import tensorflow_probability as tfp
 from tensorflow.keras import layers, backend as K
 
 from tensorflow.keras.initializers import RandomNormal
 import numpy as np
 
 
-def generator(breadth, depth, config):
+def generator(breadth, depth):
     """Creates a u-net generator according to the specifications in the paper.
 
     * Uses concatenation skip steps in the encoder
@@ -25,11 +27,7 @@ def generator(breadth, depth, config):
 
     """
 
-    sub = np.array(config["input_subtract"]).reshape((1, 1, 1, -1))
-    div = np.array(config["input_divide"]).reshape((1, 1, 1, -1))
-    normalization_layer = layers.Lambda(
-        lambda x: K.tanh(3 * (x - sub) / (div - sub) - 1.5)
-    )
+    normalization_layer = layers.Lambda(lambda x: Normalization(x))
 
     kernel_initializer = RandomNormal(mean=0.0, stddev=0.02)
 
@@ -68,7 +66,7 @@ def generator(breadth, depth, config):
     )
 
     generator = dt.models.unet(
-        input_shape=(None, None, 7),
+        input_shape=(None, None, 2),
         conv_layers_dimensions=list(
             breadth * 2 ** n for n in range(depth - 1)),
         base_conv_layers_dimensions=(breadth * 2 ** (depth - 1),),
@@ -77,7 +75,7 @@ def generator(breadth, depth, config):
             breadth // 2,
         ),
         steps_per_pooling=2,
-        number_of_outputs=3,
+        number_of_outputs=2,
         output_kernel_size=1,
         output_activation="tanh",
         scale_output=True,
@@ -93,7 +91,7 @@ def generator(breadth, depth, config):
     return generator
 
 
-def discriminator(depth, config):
+def discriminator(depth):
     """Creates a patch discriminator according to the specifications in the paper.
 
     Parameters
@@ -105,18 +103,9 @@ def discriminator(depth, config):
 
     """
 
-    sub = np.concatenate(
-        [config["target_subtract"], config["input_subtract"]], axis=-1
-    ).reshape((1, 1, 1, -1))
-    div = np.concatenate(
-        [config["target_divide"], config["input_divide"]], axis=-1
-    ).reshape((1, 1, 1, -1))
+    normalization_layer = layers.Lambda(lambda x: Normalization(x))
 
     activation = layers.LeakyReLU(0.1)
-
-    normalization_layer = layers.Lambda(
-        lambda x: K.tanh(3 * (x - sub) / (div - sub) - 1.5)
-    )
 
     discriminator_convolution_block = dt.layers.ConvolutionalBlock(
         kernel_size=(4, 4),
@@ -137,8 +126,8 @@ def discriminator(depth, config):
 
     return dt.models.convolutional(
         input_shape=[
-            (None, None, 3),
-            (None, None, 7),
+            (None, None, 2),
+            (None, None, 2),
         ],  # shape of the input
         conv_layers_dimensions=[16 * 2 ** n for n in range(depth)],
         dense_layers_dimensions=(),  # number of neurons in each dense layer
@@ -151,3 +140,23 @@ def discriminator(depth, config):
         convolution_block=discriminator_convolution_block,
         pooling_block=discriminator_pooling_block,
     )
+
+
+def Normalization(input_tensor, scale=1, subs=0.5):
+
+    zero = tf.constant(0, dtype=tf.float32)
+    where = tf.not_equal(input_tensor, zero)
+
+    q1, q99 = (
+        tfp.stats.percentile(
+            input_tensor[where], q=1, interpolation="linear"
+        ),
+        tfp.stats.percentile(
+            input_tensor[where], q=99, interpolation="linear"
+        ),
+    )
+
+    scale = tf.constant(scale, dtype=tf.float32)
+    subs = tf.constant(subs, dtype=tf.float32)
+
+    return K.tanh(scale * (input_tensor - q1) / (q99 - q1) - subs)
