@@ -9,12 +9,12 @@ TEST_VARIABLES = {
     "generator_depth": [6],
     "generator_breadth": [16],
     "discriminator_depth": [5],
-    "mae_loss_weight": [1],
-    "magnification": ["40x"],
+    "mae_loss_weight": [0.001],
+    "dataset": ["HepaRG"],
     "batch_size": [8],
-    "min_data_size": [64],
-    "max_data_size": [65],
-    "path": [r"C:/GU/VirtualStaining/datasets"],
+    "min_data_size": [1024],
+    "max_data_size": [1025],
+    "path": [r"C:/GU/GitHub/VirtualStaining/datasets"],
 }
 
 
@@ -23,15 +23,11 @@ def model_initializer(
     generator_breadth,
     discriminator_depth,
     mae_loss_weight=1,
-    path=None,
-    magnification="60x",
     **kwargs,
 ):
-    DATASET_PATH = os.path.join(path, "apidocytes_" + magnification)
-    params = apido.get_dataset_parameters(DATASET_PATH)
 
-    generator = apido.generator(generator_breadth, generator_depth, params)
-    discriminator = apido.discriminator(discriminator_depth, params)
+    generator = apido.generator(generator_breadth, generator_depth)
+    discriminator = apido.discriminator(discriminator_depth)
 
     return dt.models.cgan(
         generator=generator,
