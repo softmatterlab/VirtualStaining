@@ -4,6 +4,7 @@ import shutil
 import time
 
 import numpy as np
+import deeptrack as dt
 
 _file_name_struct = "HepaRG_{0}_S{1}.tif"
 _data_types = ["BF", "PC", "NC", "LD"]
@@ -79,6 +80,36 @@ def split_validation(dataset, _from, _to, percentage):
             os.remove(file)
 
 
+def get_masks(dataset):
+
+    from skimage import feature
+    from PIL import Image
+    from skimage.morphology import convex_hull_image
+
+    filenames = glob.glob(
+        os.path.join(
+            ".", "datasets",
+            "HepaRG",
+            "training_data",
+            "*PC*.tif"
+        )
+    )
+
+    for file in filenames:
+        get_image = dt.LoadImage(path=file)
+
+        image = np.squeeze(get_image.resolve()).astype(np.float32)
+        mask = np.zeros(np.shape(image))
+
+        edges = feature.canny(image[30:-30, 30:-30], sigma=60)
+        edges = convex_hull_image(edges)
+
+        mask[30:-30, 30:-30] = edges
+        mask = Image.fromarray(np.uint8(255*mask))
+
+        mask.save(file.replace("PC", "mask"))
+
+
 save_data(
     dataset="HepaRG", cntr="200", folder="training_data"
 )
@@ -88,6 +119,10 @@ time.sleep(0.5)
 save_data(
     dataset="HepaRG", cntr="400", folder="training_data"
 )
+
+time.sleep(0.5)
+
+get_masks(dataset="HepaRG")
 
 time.sleep(0.5)
 
