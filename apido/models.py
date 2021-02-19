@@ -144,15 +144,12 @@ def discriminator(depth):
 
 def Normalization(input_tensor, scale=1, subs=0.5):
 
-    zero = tf.constant(0, dtype=tf.float32)
-    where = tf.not_equal(input_tensor, zero)
-
     q1, q99 = (
         tfp.stats.percentile(
-            input_tensor[where], q=1, interpolation="linear"
+            input_tensor, q=1, interpolation="linear"
         ),
         tfp.stats.percentile(
-            input_tensor[where], q=99, interpolation="linear"
+            input_tensor, q=99, interpolation="linear"
         ),
     )
 
