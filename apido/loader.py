@@ -69,6 +69,14 @@ def DataLoader(
             base_path, file_name) for file_name in file_names],
     )
 
+    mask_loader = dt.LoadImage(
+        **root.properties,
+        file_name=lambda index: _file_name_struct.format(
+            "mask", index),
+        path=lambda file_name: os.path.join(
+            TRAINING_PATH, file_name),
+    )
+
     flip = dt.FlipLR()
 
     affine = dt.Affine(
@@ -86,11 +94,18 @@ def DataLoader(
 
     padded_crop_size = int(512 * np.sqrt(2))
 
+    def get_points():
+        image = mask_loader.resolve()
+        _points = np.where(np.squeeze(image) != 0)
+        idx = np.random.randint(len(_points[0]))
+
+        return (_points[0][idx], _points[1][idx])
+
     cropped_data = dt.Crop(
         data_pair,
         crop=(padded_crop_size, padded_crop_size, None),
         updates_per_reload=16,
-        corner=lambda: (*np.random.randint(5000, size=2), 0),
+        corner=lambda: (*get_points(), 0),
     )
 
     augmented_data = cropped_data + flip + affine + cropping
