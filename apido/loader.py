@@ -1,3 +1,4 @@
+from apido.deeptrack.features import Lambda
 import os
 import re
 import glob
@@ -47,16 +48,23 @@ def DataLoader(
         else:
             return TRAINING_PATH
 
+    def get_input_list(validation):
+        if validation:
+            return ("BF", "PC")
+        else:
+            return ("BF", "PC", "mask")
+
     root = dt.DummyFeature(
         # On each update, root will grab the next value from this iterator
         index=get_next_index,
         base_path=get_base_path,
+        input_list=get_input_list,
     )
 
     brightfield_phase_contrast_loader = dt.LoadImage(
         **root.properties,
-        file_names=lambda index: [_file_name_struct.format(
-            _type, index) for _type in ("BF", "PC")],
+        file_names=lambda index, input_list: [_file_name_struct.format(
+            _type, index) for _type in input_list],
         path=lambda base_path, file_names: [os.path.join(
             base_path, file_name) for file_name in file_names],
     )
@@ -67,14 +75,6 @@ def DataLoader(
             _type, index) for _type in ("NC", "LD")],
         path=lambda base_path, file_names: [os.path.join(
             base_path, file_name) for file_name in file_names],
-    )
-
-    mask_loader = dt.LoadImage(
-        **root.properties,
-        file_name=lambda index: _file_name_struct.format(
-            "mask", index),
-        path=lambda file_name: os.path.join(
-            TRAINING_PATH, file_name),
     )
 
     flip = dt.FlipLR()
@@ -94,23 +94,34 @@ def DataLoader(
 
     padded_crop_size = int(512 * np.sqrt(2))
 
-    def get_points():
-        image = mask_loader.resolve()
-        _points = np.where(np.squeeze(image) != 0)
-        idx = np.random.randint(len(_points[0]))
+    def get_points(validation):
+        if validation:
+            return (0, 0)
+        else:
+            image = brightfield_phase_contrast_loader.resolve()
+            _points = np.where(image[:, :, 2] != 0)
+            idx = np.random.randint(len(_points[0]))
 
-        return (_points[0][idx], _points[1][idx])
+            return (_points[0][idx], _points[1][idx])
+
+    _data_pair = data_pair + \
+        dt.Merge(lambda: lambda image: [image[0][:, :, 0:2], image[1]])
+
+    PointsDummy = dt.DummyFeature(
+        corners=get_points,
+    )
 
     cropped_data = dt.Crop(
-        data_pair,
+        _data_pair,
         crop=(padded_crop_size, padded_crop_size, None),
         updates_per_reload=16,
-        corner=lambda: (*get_points(), 0),
+        corner=lambda corners: (*corners, 0),
+        **PointsDummy.properties
     )
 
     augmented_data = cropped_data + flip + affine + cropping
 
-    validation_data = data_pair + dt.PadToMultiplesOf(multiple=(32, 32, None))
+    validation_data = _data_pair + dt.PadToMultiplesOf(multiple=(32, 32, None))
 
     return dt.ConditionalSetFeature(
         on_true=validation_data,
