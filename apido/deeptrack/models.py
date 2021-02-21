@@ -544,7 +544,7 @@ class ScaleLayer(layers.Layer):
 
     def call(self, inputs):
         return tensorflow.clip_by_value(
-            inputs * self.A * 1750.0 + self.B * 750.0, 0, 10000
+            inputs * self.A * 50 + self.B * 60, 0, 255
         )
 
 
