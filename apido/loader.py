@@ -107,6 +107,12 @@ def DataLoader(
     _data_pair = data_pair + \
         dt.Merge(lambda: lambda image: [image[0][:, :, 0:2], image[1]])
 
+    params = apido.get_dataset_parameters(
+        DATASET_PATH,
+        data_feature=_data_pair,
+        n_images=len(training_set)
+    )
+
     PointsDummy = dt.DummyFeature(
         corners=get_points,
     )
