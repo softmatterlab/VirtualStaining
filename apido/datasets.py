@@ -82,16 +82,15 @@ def split_validation(dataset, _from, _to, percentage):
 
 def get_masks(dataset):
 
-    from skimage import feature
+    from skimage import filters
     from PIL import Image
-    from skimage.morphology import convex_hull_image
 
     filenames = glob.glob(
         os.path.join(
             ".", "datasets",
-            "HepaRG",
+            dataset,
             "training_data",
-            "*PC*.tif"
+            "*NC*.tif"
         )
     )
 
@@ -99,15 +98,12 @@ def get_masks(dataset):
         get_image = dt.LoadImage(path=file)
 
         image = np.squeeze(get_image.resolve()).astype(np.float32)
-        mask = np.zeros(np.shape(image))
 
-        edges = feature.canny(image[30:-30, 30:-30], sigma=60)
-        edges = convex_hull_image(edges)
+        global_thresh = filters.threshold_otsu(image)
+        mask = image > global_thresh
 
-        mask[30:-30, 30:-30] = edges
         mask = Image.fromarray(np.uint8(255*mask))
-
-        mask.save(file.replace("PC", "mask"))
+        mask.save(file.replace("NC", "mask"))
 
 
 save_data(
