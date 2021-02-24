@@ -8,12 +8,9 @@ import numpy as np
 import itertools
 
 from tensorflow import keras
-import tensorflow
 from tensorflow.keras import layers
 
 import matplotlib.pyplot as plt
-
-import apido
 
 _checkpoint_struct = "{0}_{1}_model_{2}"
 _datestring_struct = "%d-%m-%YT%H%M%S"
@@ -254,7 +251,11 @@ def load_model(folder):
         folder
     )
 
-    model = keras.models.load_model(model_path, compile=False)
+    from tensorflow.keras import layers, backend as K
+    model = keras.models.load_model(
+        model_path, compile=False, custom_objects={"k": K})
+    #import tensorflow as tf
+    #model = tf.saved_model.load(model_path)
 
     warnings.filterwarnings("default")
 
