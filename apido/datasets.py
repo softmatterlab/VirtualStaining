@@ -4,7 +4,6 @@ import shutil
 import time
 
 import numpy as np
-import deeptrack as dt
 
 _file_name_struct = "HepaRG_{0}_S{1}.tif"
 _data_types = ["BF", "PC", "NC", "LD"]
